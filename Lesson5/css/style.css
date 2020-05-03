@@ -1,0 +1,177 @@
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* Задание 1 */
+img{
+    max-width: 100%;
+    height: auto;
+}
+body{
+    margin: 0;
+    font-family: 'Comic Neue', cursive;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header{
+    display: flex;
+    background-color: rgb(166, 207, 99);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    
+    margin: 0 auto;
+    width: 100%;
+}
+.logo{
+    width: 150px;
+}
+.main-nav{
+    flex-grow: 1;
+}
+.main-nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+}
+.main-nav li{
+    margin-left: 15px;
+}
+.main-nav a{
+    text-decoration: none;
+    color: #000;
+}
+.main-nav a:hover{
+    color: lightcoral;
+    transition: color 0.4s ease
+}
+main{
+    display: flex;
+    
+    margin: 0 auto;
+}
+.sidebar{
+    padding-top: 20px;
+    background-color: lightcoral;
+    min-width: 210px;
+    text-align: center;
+}
+.main-content{
+    background-color: #fff;
+    width: 100%;
+}
+.main-content p{
+    padding-top: 25px;
+    text-align: center;
+}
+.main-content h2{
+    text-transform: uppercase;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-more1{
+    display: flex;
+    flex-direction:column;
+    padding: 0;
+    margin: 10px auto;
+    background-color: rgb(64, 187, 224);
+    max-width: 250px;
+    min-height: 250px;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid #000;  
+}
+.about-more1:hover{
+    background-color: rgb(206, 206, 132);
+    transition: all 0.5s ease;
+}
+.about-more1 h3{
+    font-size: 25px;
+}
+.about-more1 p{
+    font-size: 15px;
+    font-style: italic;
+}
+.about-logo{
+    height: 55px;
+    width: 55px;
+    border-radius: 50px;
+}
+.about-logo:hover{
+    border:  5px blue;
+    transition: all 0.8s ease-out;
+}
+.btn{
+    border: none;
+    background: rgb(57, 125, 182);
+    position: relative;
+    cursor: pointer;
+    margin: 20px auto;
+    border-radius: 15px;
+    max-width: 85px;  
+    transition: all 0.5s ease;
+}
+.btn:hover{
+    background: rgba(0,0,0,0);
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
+}
+.footer{
+    text-align: center;
+    background: chocolate;
+}
+
+/*Задание 2*/
+.holder{
+    display: flex;
+    max-width: 200px;
+    flex-wrap:wrap;
+    max-width: 300px;
+}
+.item{
+    min-width: 100px;
+    border: 1px solid #000;
+    text-align: center;
+}
+.holder .item:nth-child(1){
+    background-color: brown;
+    flex-grow:1;
+    order: -3;
+    border-radius: 12px 0 0 0;
+    min-width: calc(50% - 2px);  
+}
+.holder .item:nth-child(2){
+    background-color: chartreuse; 
+}
+.holder .item:nth-child(3){
+    background-color: darkcyan;
+    order: -1;
+}
+.holder .item:nth-child(4){
+    background-color: darkkhaki;
+}
+.holder .item:nth-child(5){
+    flex-grow:1;
+    background-color: blue;
+    order: -2;
+    border-radius: 0 12px 0 0;
+}

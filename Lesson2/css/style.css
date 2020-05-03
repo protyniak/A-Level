@@ -1,0 +1,50 @@
+/*-- Задание 1 */
+
+blockquote{
+    color: red;
+}
+/*Ps: я задал 3 цитаты, что бы было видно, что все стили работают. 
+Если бы цитата была одна, то цвет будет зеленый т.к. встроенные стили имеют наибольший приоритет)))*/
+
+/*-- Задание 2 */
+
+a[href^="https://"]{
+    color: red;
+}
+li:nth-child(4n){
+    background-color: royalblue;
+}
+ul + p {
+    font-size: 26px;
+}
+
+/*-- Задание 3 */
+    
+h3:nth-child(odd){
+    color:pink;
+}
+#greycol{
+    color: grey;
+} 
+#greycol ~ div > p{
+    color: red;
+}
+h3 ~ p:nth-child(odd){
+    color: green;
+}
+.yellow{
+    color: yellow;
+}
+
+/*-- Задание 4 */
+
+.bg-box{
+    width: 550px;
+    height: 350px;
+    background: url(../img/lamp-png-0.png) top / 40px 40px repeat-x,
+                url(../img/grass-png-images-pictures-transparent-28.png) bottom / 100px 100px repeat-x,
+                url(../img/Ёжик.png) left / 25px 25px repeat-y,
+                url(../img/58eb07b830eab15b56162788.png) right/ 25px 25px repeat-y,
+                url(../img/pole-zelen-trava-dom-derevya.jpg) center / 250px 150px no-repeat,
+                green;        
+}

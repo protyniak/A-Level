@@ -1,0 +1,316 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+/* ICONS */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?rp1lj8');
+  src:  url('../fonts/icomoon.eot?rp1lj8#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?rp1lj8') format('truetype'),
+    url('../fonts/icomoon.woff?rp1lj8') format('woff'),
+    url('../fonts/icomoon.svg?rp1lj8#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+/* ICONS */
+
+body {
+	background-color: #e7e9eb;
+	font-size: 18px;
+	line-height: 1.77;
+	font-family: 'Montserrat', sans-serif;
+	color: #221818;
+}
+
+.header	{
+	/*border: 1px solid #f30;*/
+	background-image: url(img/bg-header.jpg);
+	background-repeat: repeat-x;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0;
+	position: fixed;
+	width: 100vw;
+	height: auto;
+	z-index: 100;
+}
+.logo_top {
+	width: auto;
+	height: 90px;
+}
+
+main {
+	position: relative;
+	top: 74px;
+	width: 100vw;	
+}
+.story	{
+	background-image: url(img/bg-wood.jpg);
+	background-size: 100vw;
+}
+.story_content {
+	color: white;
+	padding-bottom: 15px;
+}
+.story_content .container {
+	margin: 0 auto;
+	max-width: 850px;
+	text-align: center;
+}
+.story_content h1 {
+	font-family: 'Courgette', cursive;
+	font-weight: 400;
+	font-size: 46px;
+	line-height: 1.13;
+	color: #fff;
+	padding-top: 90px;
+	margin-bottom: 50px;
+}
+.story_content p {
+	padding-bottom: 110px;
+}
+.main_bg {
+	background-image: url(img/bg-texture.png);
+	width: 100vw;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+}
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.food {
+	width: 450px;
+	height: auto;
+}
+.description h1 {
+	text-transform: uppercase;
+	color: #fd1c18;
+	font-weight: 700;
+	line-height: 1.5;
+}
+.main_block1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.description {
+	max-width: 480px;
+}
+.main_block1, .main_block2 {
+	padding-top: 110px;
+} 
+.main_block2 {
+	display: flex;
+	justify-content: space-between;
+}
+.beer {
+	width: 450px;
+	height: auto;
+}
+.beer_btn {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #2c3e50;
+	font-weight: bold;
+	border: 2px solid #2c3e50;
+	padding: 5px 20px;
+	transition: 0.3s;
+}
+.beer_btn:hover {
+	background-color: #2c3e50;
+	color: #fff;
+}
+.description p {
+	margin-bottom: 20px;
+}
+form {
+	text-transform: uppercase;
+	color: #fd1c18;
+	font-weight: 700;
+	line-height: 1.5;
+	text-align: center;
+}
+form .container {
+	max-width: 500px;
+	margin-bottom: 50px;
+}
+#name, #mail, #phone, #message {
+	width: 100%;
+	border: 1px solid #9c9c9c;
+	border-radius: 10px;
+	font-size: 15px;
+	padding: 7px 15px;
+}
+input {
+	margin-bottom: 15px;
+}
+textarea {
+	height: 200px;
+	margin-bottom: 15px;
+}
+.form_btn {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #2c3e50;
+	font-weight: bold;
+	border: 2px solid #2c3e50;
+	padding: 5px 45px;
+}
+.form_btn:hover {
+	background-color: #2c3e50;
+	color: #fff;
+	transition: 0.3s;
+}
+
+/*footer===========================
+===================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NAV  */
+/* скрываем чекбокс */
+.main-nav{
+	
+}
+
+
+#menu__toggle {
+  opacity: 0;
+}
+
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 102;
+  margin: 0 auto;
+}
+
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  z-index: 101;
+}
+
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  right: 0;
+}

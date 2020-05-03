@@ -1,0 +1,202 @@
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+}
+
+/* Задание 1 */
+.play-card{
+    position: absolute;
+    background-color: #0d5825;
+    font-size: 25px;
+    height: 600px;
+    width: 600px;
+    margin-left: 100px;
+    padding: 20px;
+}
+.card{
+    position: relative;
+    top: 200px;
+    left: 70px; 
+}
+img{
+    width: 150px;
+}
+.card img:nth-child(1){
+    transform: translateX(105px) rotate(-20deg);
+}
+img:nth-child(1):hover{
+    transform: translateX(95px) rotate(-20deg) translateY(-10px);
+    transition: 0.4s linear;
+    cursor: pointer;
+}
+.card img:nth-child(2){
+    transform: rotate(-10deg);
+}
+img:nth-child(2):hover{
+    transform: rotate(-10deg) translateY(-15px);
+    transition: 0.4s linear;
+    cursor: pointer;
+}
+.card img:nth-child(3){
+    transform:translateX(-105px) rotate(3deg) translateY(10px);
+}
+img:nth-child(3):hover{
+    transform: translateX(-95px) rotate(3deg) translateY(-10px);
+    transition: 0.4s linear;
+    cursor: pointer;
+}
+blockquote{
+    text-align: center;
+    color: #fff;
+}
+cite{
+    font-style: italic;
+}
+
+/* Задание 2 */
+.box-parent{
+    position: relative;
+    top: 600px;
+    left: 200px;
+}
+.box{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    left: 30px;
+    top: 30px;
+}
+
+.box:nth-child(2){
+    background-color: blue;
+    left: 80px;
+    top: 80px;
+    z-index: 2;
+    
+}
+.box:nth-child(3){
+    background-color: red;
+    left: 130px;
+    top: 130px;
+    
+}
+/* Задание 3 */
+
+nav {
+	display: block;
+	position: sticky;
+	height: 100%;
+	z-index: 100;
+}
+.menu {
+	position: fixed;
+	width: 300px;
+	height: 100%;
+	background: grey;
+	transition: .7s;
+	transform: translateX(-280px);
+}
+.menu:hover {
+	transform: translateX(0);
+}
+.hidden_menu {
+	position: absolute;
+	top: 0;
+	left:  0;
+    width: 300px;
+    padding-top: 85px;
+	height: 100%;
+	transition: .7s;
+}
+.hidden_menu:hover {
+	z-index: 150;
+	background: grey;
+}
+.hidden_menu:not(:hover){
+	z-index: 130;
+}
+li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	transition: .5s;
+    line-height: 2;
+    margin-left: 50px;
+}
+li {
+	list-style: none;
+}
+.rhombus-meny{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(161, 189, 7);
+    border: 1px solid #000;
+    background-size: inherit;
+    margin-left: 25px;
+    transform: rotate(45deg);
+}
+
+li a:hover {
+	color: #e67e22;
+}
+.menu_btn{
+    text-align: center;
+    position: relative;
+}
+.menu_btn_text {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background: grey;
+    color: white;
+    display: flex;
+    justify-content: center;
+    transform: rotate(90deg);
+    top: 190px;
+    margin: 0 auto;
+    left: 140px;
+    overflow: hidden;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* Задание 4 */
+
+.anime {
+	position: relative;
+ 	width: 300px;
+  	height: 300px; 
+  	top: 850px; 
+  	left: 20px;
+  	padding-top: 20px;
+}
+
+@keyframes run {
+  0% {
+    transform: translate(0);   
+  }
+  25% {
+    transform: translate(0, 100px);
+    background: #3498db; 
+  }
+  50% {
+    transform: translate(100px, 100px); 
+    background: #27ae60;
+  }
+  75% {
+    transform: translate(100px, 0);
+    background: #f1c40f; 
+  }
+}
+
+.animation {
+	display: block;
+	width: 100px;
+  	height: 100px;
+  	background: #c0392b;
+  	animation: run 4s infinite ease-in-out;
+}
