@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color: #d9d9d9;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;  
+  padding: 0 15px;
+}
+
+li, a{
+  text-decoration: none;
+  list-style: none;
+}
+
+
+
+
+footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: #5b6ceb;
+
+}
+.main-content{
+  display: flex;
+  padding-bottom: 60px;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.box .content-footer{
+  margin: 20px 0 0 0;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.left .content-footer p{
+  text-align: justify;
+}
+.left .content-footer .social{
+  margin: 20px 0 0 0;
+}
+.left .content-footer .social a{
+  padding: 0 2px;
+}
+.left .content-footer .social a span{
+  height: 40px;
+  width: 40px;
+  
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content-footer .social a span:hover{
+  background: #5363d8;
+}
+.center .content-footer .fas{
+  font-size: 1.4375rem;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content-footer .fas:hover{
+  background: #5363d8;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content-footer .phone{
+  margin: 15px 0;
+}
+
+
+.copyright{
+  position: relative;
+  background-color: #5363d8;
+  text-align: center;
+  color: rgb(167, 164, 164);
+  padding: 30px 0;
+  max-height: 100px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
